@@ -1,4 +1,5 @@
 module.exports = {
+    outputDir: 'docs',
     devServer: {
         // 端口号
         port: 8080,
