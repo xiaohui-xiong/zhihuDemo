@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 
 import App from './App.vue'
-axios.defaults.baseURL = '/api'
+axios.defaults.baseURL = process.env.VUE_APP_BASE_API
 axios.interceptors.request.use(config => {
   store.commit('setLoading', true)
   store.commit('setError', { status: false, message: '' })
